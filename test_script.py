@@ -10,8 +10,7 @@ api_url = "http://127.0.0.1:8000/get_form/"
 response = requests.post(api_url, data=data)
 
 # Проверка, содержит ли ответ данные перед декодированием JSON
-if response.text:
-    # Вывод ответа
+if response.status_code == 200:
     print(response.json())
 else:
-    print("Empty response")
+    print(f"Error: {response.status_code}")

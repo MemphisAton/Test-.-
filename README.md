@@ -52,7 +52,7 @@ Data: custom_field1=value1&custom_field2=2023-11-14
 
 ## Ссылка на репозиторий
 
-[Ссылка на репозиторий проекта](https://your-repository-url.git)
+[Ссылка на репозиторий проекта](https://github.com/MemphisAton/Test-e.Kom.git)
 
 ## Контактная информация
 

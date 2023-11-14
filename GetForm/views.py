@@ -4,10 +4,12 @@ from django.views.decorators.http import require_http_methods
 from .tinydb_connector import FormTemplateDB
 from .validators import validate_email_field, validate_phone, validate_date, validate_text
 import logging
+from django.views.decorators.csrf import csrf_exempt
 
 logger = logging.getLogger(__name__)
 
 
+@csrf_exempt
 @require_http_methods(["POST"])
 def get_form(request):
     """
